@@ -1,5 +1,5 @@
 
-public class Conta {
+public abstract class Conta {
 	protected double saldo;
 
 	void deposita(double valor) {
@@ -10,9 +10,9 @@ public class Conta {
 		return this.saldo;
 	}
 	
-	public void atualiza (double taxa) {
-		this.saldo+=(this.saldo*taxa);
-	}
+	public abstract void atualiza (double taxa); //{
+		//this.saldo+=(this.saldo*taxa);
+	//}
 
 	public void saca (double valor) {
 		this.saldo -= valor;
