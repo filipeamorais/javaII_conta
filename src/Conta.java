@@ -14,8 +14,14 @@ public abstract class Conta {
 		//this.saldo+=(this.saldo*taxa);
 	//}
 
-	public void saca (double valor) {
-		this.saldo -= valor;
+	public Boolean saca (double valor) {
+		if (saldo >= valor){
+			this.saldo -= valor;
+			return true;
+		}else{
+			throw new RuntimeException("Saldo insuficiente");
+		}
+		
 	}
 	
 	public void setSaldo(double saldo) {

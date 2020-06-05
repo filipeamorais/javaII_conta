@@ -7,6 +7,10 @@ public class TestaConta {
         ContaCorrente joao = new ContaCorrente();
         joao.deposita(50.0);
 
+        if (joao.saca(100.0)){
+            System.out.println("saque efetuado com sucesso!");
+        };
+
         System.out.println(joao.getSaldo());
     }
 }
