@@ -16,7 +16,7 @@ public class TestaExcecao {
         System.out.println("inicio m2");
 
         int[] nums = new int[5];
-        for(int i=0; i<5; i++){
+        for(int i=0; i<6; i++){
             nums[i]=i*2;
             System.out.println(nums[i]);
         }
